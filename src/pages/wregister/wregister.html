@@ -1,0 +1,79 @@
+<!--
+  Generated template for the WregisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>Worker Register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list >
+
+    <ion-item>
+      <ion-label>First Name</ion-label>
+      <ion-input type="text" [(ngModel)]="firstName"></ion-input>
+    </ion-item>
+
+    <br>
+
+  
+    <ion-item>
+      <ion-label>Second Name</ion-label>
+      <ion-input type="text" [(ngModel)]="secondName"></ion-input>
+    </ion-item>
+
+    <br>
+
+
+    <ion-item>
+      <ion-label>Date of Birth</ion-label>
+      <ion-datetime displayFormat="MMM/DD/YYYY" [(ngModel)]="DOB"></ion-datetime>
+    </ion-item>
+
+    <br>
+
+    <ion-item>
+      <ion-label>Expertise</ion-label>
+      <ion-select [(ngModel)]="expertise">
+        <ion-option value="Mason">Mason</ion-option>
+        <ion-option value="Plumber">Plumber</ion-option>
+        <ion-option value="Electrician">Electrician</ion-option>
+        <ion-option value="Nanny">Nanny</ion-option>
+        <ion-option value="Roofer">Roofer</ion-option>
+        <ion-option value="General Cleaner">General Cleaner</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <br>
+
+    <ion-list radio-group>
+ 
+      <ion-item>
+        <ion-label>Gender</ion-label>
+      </ion-item>
+      <ion-item inset>
+        <ion-label>Male</ion-label>
+        <ion-radio checked="true" value="male"></ion-radio>
+      </ion-item>
+    
+      <ion-item inset>
+        <ion-label>Female</ion-label>
+        <ion-radio value="Female"></ion-radio>
+      </ion-item>
+    
+    </ion-list>
+  
+  </ion-list>
+
+
+  <button color="secondary" ion-button class="login" (click)="sendLogin()" color="secondary" round full>Okay</button>
+
+</ion-content>

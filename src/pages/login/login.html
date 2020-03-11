@@ -1,0 +1,44 @@
+
+
+
+
+<ion-content>
+  <img src="assets/imgs/xx.png" alt="logo">
+  <br>
+  <br>
+  <br>
+
+ 
+  <!-- <input [(ngModel)]="email" type="text" placeholder="email or mobile"> -->
+  <!-- <input [(ngModel)]="password" type="password" placeholder="password"> -->
+
+  <!-- <button color="primary" ion-button class="login" (click)="sendChooser()">User Login</button> -->
+  <form (submit) = Ulogin(Uloginform) #Uloginform="ngForm">
+    <ion-list>
+
+        <ion-item>
+          <ion-label>Phone No.</ion-label>
+          <ion-input ngModel name="phone" type="number"  #phoneInput="ngModel" maxlength="10" autocomplete='true'required></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>Password</ion-label>
+          <ion-input ngModel name="password" type="password"  #passwordInput="ngModel" autocomplete='true' required></ion-input>
+        </ion-item>
+
+        <button class="loginb" ion-button full color="primary" type="submit"> User Login </button>
+
+    </ion-list>  
+
+  
+  </form>
+  
+  <!-- <button color="primary" ion-button  (click)="sendChooser()">User Enter</button> -->
+  <button color="secondary" ion-button  (click)="giveOptions()">Worker</button>
+
+  <p>Hello {{email}}!</p>
+  
+
+ 
+
+</ion-content> 

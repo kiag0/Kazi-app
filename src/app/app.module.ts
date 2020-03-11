@@ -1,40 +1,61 @@
+import { IonicStorageModule } from '@ionic/storage';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import {Facebook} from '@ionic-native/facebook';
+import { Geolocation } from '@ionic-native/geolocation';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
+
+import { SocketIoModule, SocketIoConfig } from 'ng-socket-io';
+
+let config: SocketIoConfig = { 
+  url: 'http://127.0.0.1:4000', 
+  options: {transport : ['websocket'] } 
+};
+
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { AuthProvider } from '../providers/auth/auth';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { CarsProvider } from '../providers/cars/cars';
+import { WorkerServiceProvider } from '../providers/worker-service/worker-service';
+import { AuthInterceptorProvider } from '../providers/auth-interceptor/auth-interceptor';
+
+
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+
+  
   ],
-  imports: [
+  imports: [ 
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    HttpClientModule,
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot(),
+    SocketIoModule.forRoot(config)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+   
+
   ],
   providers: [
     StatusBar,
+    Geolocation,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    Facebook,
+ //   [{provide: HTTP_INTERCEPTORS, useClass:AuthInterceptorProvider, multi: true}],
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthProvider,
+    CarsProvider,
+    WorkerServiceProvider,
+    AuthInterceptorProvider
   ]
 })
 export class AppModule {}

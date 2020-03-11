@@ -1,0 +1,65 @@
+<!--
+  Generated template for the ChooserPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color = "primary">    
+    <ion-title>Select Service </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+<div class="chooserwrapper" >
+
+      <!-- <div class="upper">
+        <div class="k1 kommon" (click)="amb2map()">
+          <img src="assets/imgs/ambulance.png"/>
+          <div class="descr">Ambulance</div>
+        </div>
+        <div class="k2 kommon" (click)="tow2map()">
+          <img src="assets/imgs/tow.png"/>
+          <div class="descr">Tow-truck</div>
+        </div>
+      </div>
+      <div class="upper">
+        <div class="k1 kommon" (click)="amb2map()">
+          <img src="assets/imgs/ambulance.png"/>
+          <div class="descr">Ambulance</div>
+        </div>
+        <div class="k2 kommon" (click)="tow2map()">
+          <img src="assets/imgs/tow.png"/>
+          <div class="descr">Tow-truck</div>
+        </div>
+      </div> 
+      <div class="lower">
+        <div class="k3 kommon" (click)="mech2map()">
+          <img src="assets/imgs/mech.png"/>
+          <div class="descr">Mechanic</div>
+        </div>
+        <div class="k4 kommon" (click)="fire2map()">
+          <img src="assets/imgs/fire.png"/>
+          <div class="descr">Fire-truck</div>
+        </div>
+
+      </div> -->
+
+      <div *ngFor="let worker of workers"  class="display" (click)="toMap(worker)">
+
+        <h3 >{{worker}}</h3>
+          
+      </div>
+      
+</div>
+    
+
+  
+
+</ion-content>
+
+

@@ -1,0 +1,181 @@
+page-chooser {
+    
+    
+
+    // .chooserwrapper{
+    //     height: 100%;
+    //     width: 100%;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-evenly; 
+    //     align-content: space-between ;
+
+
+    //     .kommon{
+    //         display: flex;
+    //         background: black;
+    //         border-radius: 7px;
+    //         width: 40%;
+    //         height: 70%;
+    //         margin-top: 20%;
+    //         margin-bottom: 20%;
+    //         flex-direction: column;
+
+    //         img{
+                
+    //             justify-content: center;
+    //             align-content: center;
+    //             width: 50px;
+    //             height: 50px;
+    //             margin-left: 35%;
+    //             margin-top: 50%;
+    //         }
+    //         .descr{
+    //             justify-content: center;
+    //             margin-top: 30%;
+    //             margin-left: 30%;
+    //             color: #000000fd;
+    //         }
+
+            
+
+    //     }
+        
+    //     .upper{
+    //         height : 100%;
+    //         background-image: url('/assets/imgs/covermaps.png');
+    //         display: flex;
+    //         flex-direction: row;
+    //         flex-wrap: nowrap;
+    //         align-content: center;
+    //         justify-content: space-evenly;
+
+    //         .k1{
+    //             display: flex;
+    //             background: #ed4521;
+    //             animation-name: floating;
+    //             animation-duration: 3s;
+    //             animation-iteration-count: infinite;
+    //             animation-timing-function: ease-in-out;
+
+    //             -webkit-box-shadow: 6px 10px 18px -6px rgba(0,0,0,0.54);
+    //             -moz-box-shadow: 6px 10px 18px -6px rgba(0,0,0,0.54);
+    //             box-shadow: 6px 10px 18px -6px rgba(0,0,0,0.54);
+    
+
+    //         }
+    //         .k2{
+    //             background: #ed4521;
+    //             animation-name: floating2;
+    //             animation-duration: 3s;
+    //             animation-iteration-count: infinite;
+    //             animation-timing-function: ease-in-out;
+
+    //             -webkit-box-shadow: -5px 1px 18px -6px rgba(0,0,0,0.54);
+    //             -moz-box-shadow: -5px 1px 18px -6px rgba(0,0,0,0.54);
+    //             box-shadow: -5px 1px 18px -6px rgba(0,0,0,0.54);
+
+
+    //         }
+    //     }
+
+    //     .lower{
+    //         height: 100%;
+    //         background-image: url('/assets/imgs/covermaps.png');
+    //         display: flex;
+    //         flex-direction: row;
+    //         flex-wrap: nowrap;
+    //         align-content: center;
+    //         justify-content: space-evenly;
+
+    //         .k3{
+    //             background: #ed4521;
+    //             margin-bottom: 25%;
+    //             animation-name: floating2;
+    //             animation-duration: 3s;
+    //             animation-iteration-count: infinite;
+    //             animation-timing-function: ease-in-out;
+
+    //             -webkit-box-shadow: 4px -3px 19px -6px rgba(0,0,0,0.54);
+    //             -moz-box-shadow: 4px -3px 19px -6px rgba(0,0,0,0.54);
+    //             box-shadow: 4px -3px 19px -6px rgba(0,0,0,0.54);
+
+    //         }
+    //         .k4{
+    //             background: #ed4521;
+    //             margin-bottom: 25%;
+    //             animation-name: floating;
+    //             animation-duration: 3s;
+    //             animation-iteration-count: infinite;
+    //             animation-timing-function: ease-in-out;
+    //             //shadow
+    //             -webkit-box-shadow: -4px -5px 18px -6px rgba(0,0,0,0.54);
+    //             -moz-box-shadow: -4px -5px 18px -6px rgba(0,0,0,0.54);
+    //             box-shadow: -4px -5px 18px -6px rgba(0,0,0,0.54);
+    //         }
+    //     }
+
+
+        
+    //     @keyframes floating {
+    //         from { transform: translate(0,  0px); }
+    //         65%  { transform: translate(0, 5px); }
+    //         to   { transform: translate(0, -0px); }    
+    //     }
+
+    //     @keyframes floating2 {
+    //         from { transform: translate(0,  0px); }
+    //         45%  { transform: translate(5px, 5px); }
+    //         65%  { transform: translate(7px, 5px); }
+    //         to   { transform: translate(0, -0px); }    
+    //     }
+
+    //     @keyframes floating3 {
+    //         from { transform: translate(0,  0px); }
+    //         45%  { transform: translate(-5px, -3px); }
+    //         65%  { transform: translate(5px, 3px); }
+    //         to   { transform: translate(0, -0px); }    
+    //     }
+       
+    // }
+
+
+
+    // new styles
+
+    .chooserwrapper {
+
+        height: 100%;
+        width: 100%;
+        background-image: url(/assets/imgs/covermaps.png);
+        background-repeat: repeat;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+       
+
+    }
+    
+
+    .display {
+        background: #180541;
+        height: 100px;
+        width: 150px;
+        //max-width: 200px;
+        color: rgb(200, 172, 14);
+        border-radius: 7px;
+        margin: 7px;
+    
+        h3 {
+            margin: auto;
+            text-align: center;
+            padding-top:40%;
+            font-family:serif;
+            font-weight: bolder;
+            font-style: normal;
+        }
+    }
+
+
+}

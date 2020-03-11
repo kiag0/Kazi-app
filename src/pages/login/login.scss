@@ -1,0 +1,98 @@
+page-login {
+
+    ion-content{
+        background-image: url('/assets/imgs/covermap.png');
+        background-size: cover;
+        text-align: center;
+    }
+
+    img{
+        margin-top: 30px;
+        width: 420px; 
+    }
+
+    button{
+        margin:0px;
+    }
+
+    // .login{
+    //     margin-top: 10px;
+    //     text-align: center;
+    //     border: none;
+    //     padding: 15px 80px;
+    //     text-decoration: none;
+    //     display: inline-block;
+    //     text-transform: uppercase;
+    //     font-size: 13px;
+    //     transition: all 0.3s ease-in-out;
+    //     width: 85%;
+    //     height: 35px;
+    //     color: white; 
+    // }
+
+    // input[type=text], input[type=password]{
+    //     background-color: white;
+    //     border: none;
+    //     color: black;
+    //     padding: 15px 32px;
+    //     text-decoration: none;
+    //     font-size: 16px;
+    //     margin: 5px;
+    //     width: 85%;
+    //     border: 2px solid black;
+    //     transition: all 0.5s ease-in-out;
+    //     height: 35px;
+    //     text-align: center;
+    //     margin: 0 auto;
+    //     margin-bottom: 10px;
+         
+
+    // }
+
+}
+
+// page-login {
+
+//     a {
+//         color: blanchedalmond;
+//     }
+
+//     .container {
+//         width: 100%;
+//         height: 100%;
+//         background: url(/assets/imgs/covermap.png) white;
+//         // background-repeat: no-repeat;
+//         background-position: center;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: space-around;
+//     }
+
+//     .span {
+//         font-family:serif;
+//         font-style: normal;
+//         font-weight: 200;
+//         font-feature-settings: "afrc";
+//         font-size: 3rem;
+//         font-stretch: expanded;
+//         color: blue; 
+//         //color: rgb(99, 28, 165);
+//         //text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+//     }
+//     .button-md-light {
+//         background: blue;
+//         color: white;
+//     }
+
+
+//     .form{
+
+//         width: 100%;
+//         height: 40%;
+//         background: rgb(46, 46, 46);
+
+//     }
+
+
+// }

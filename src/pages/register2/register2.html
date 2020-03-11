@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-navbar no-border-bottom color="secondary">
+    <ion-title>
+      Worker
+    </ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="puppies">
+        Login
+      </ion-segment-button>
+      <ion-segment-button value="kittens">
+        Register
+      </ion-segment-button>
+      
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'puppies'">
+      <form (submit) = Ulogin(Uloginform) #Uloginform="ngForm">
+        <ion-list inset>
+
+          
+          <br>
+          <br>
+    
+            <ion-item>
+              <ion-label>Phone No.</ion-label>
+              <ion-input ngModel name="phone" type="number"  #phoneInput="ngModel" maxlength="10" autocomplete='true'required></ion-input>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Password</ion-label>
+              <ion-input ngModel name="password" type="password"  #passwordInput="ngModel" autocomplete='true' required></ion-input>
+            </ion-item>
+    
+            <button class="loginb" ion-button full color="secondary" type="submit"> Worker Login </button>
+    
+        </ion-list>  
+    
+      
+      </form>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'kittens'">
+
+      <form (submit) = Signup(signupform) #signupform="ngForm">
+        <ion-list>
+
+          <br>
+          <br>
+          <br>
+            <ion-item>
+              <ion-label fixed>Phone </ion-label>
+              <ion-input ngModel name="phone" type="number" #phoneInput="ngModel" required maxlength="13" minlength="10"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label fixed>Password</ion-label>
+              <ion-input ngModel name="password" type="password"  #passwordInput="ngModel" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label fixed>Repeat Password</ion-label>
+              <ion-input ngModel  type="password"  #passwordInput="ngModel" [ngModelOptions]="{standalone: true}" required></ion-input>
+            </ion-item>
+  
+            <button ion-button full color="light" type="submit" color="secondary"> CREATE</button>
+  
+        </ion-list>   
+
+
+    </form>
+    </ion-list>
+
+
+  </div>
+</ion-content>
