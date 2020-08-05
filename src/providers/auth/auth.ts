@@ -216,3 +216,8 @@ data.PhoneNumber =phonx;
   }
 
 }
+
+
+// this.httpLocal.setHeader('*', 'Accept','application/xml');
+// this.httpLocal.setHeader('*', 'apikey', '8d326e0044e6c8b961d448f1addcb56641248813c1a31f992167226915b0e477');
+// this.httpLocal.setHeader('*', 'content-type','application/x-www-form-urlencoded');

@@ -88,6 +88,6 @@
     <plugin name="cordova-plugin-geolocation" spec="^4.0.1">
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="locates you to access our services" />
     </plugin>
-    <engine name="android" spec="^8.1.0" />
     <plugin name="cordova-sqlite-storage" spec="4.0.0" />
+    <engine name="android" spec="^8.1.0" />
 </widget>
